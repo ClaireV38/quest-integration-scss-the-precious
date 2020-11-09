@@ -1,7 +1,50 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Roboto Slab";
+  font-size: 22px;
+  margin: 0;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background-color: orange;
+  color: white;
+}
+
+.site_title, nav {
   display: flex;
   flex-direction: raw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: raw;
+  margin: 0 4px;
+  flex-wrap: wrap;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  margin: 0 3px;
+}
+
+main {
+  flex-grow: 1;
 }
 
 .ring {
@@ -16,6 +59,9 @@ header {
 }
 
 footer {
+  flex-shrink: 0;
   background-color: orange;
+  color: white;
   display: flex;
+  flex-wrap: wrap;
 }
