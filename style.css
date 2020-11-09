@@ -1,0 +1,21 @@
+header {
+  background-color: orange;
+  display: flex;
+  flex-direction: raw;
+}
+
+.ring {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: red;
+  border-width: 5px;
+  background: transparent;
+  box-shadow: inset 3.3333333333px 3.3333333333px 3px #ff6666, 3.3333333333px 3.3333333333px 3px #ff6666;
+}
+
+footer {
+  background-color: orange;
+  display: flex;
+}

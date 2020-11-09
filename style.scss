@@ -1,0 +1,28 @@
+@mixin ring ($size, $color) {
+        height: $size;
+        width: $size;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: $color;
+        border-width: $size/8;
+        background: transparent;
+        box-shadow: inset $size/12 $size/12 3px lighten( $color, 20%),
+                    $size/12 $size/12 3px lighten( $color, 20%);
+    } 
+    
+$headAndFootColor: orange;
+
+header {
+    background-color: $headAndFootColor;
+    display: flex;
+    flex-direction: raw;
+}
+    
+.ring {
+    @include ring(40px, red);
+}
+
+footer {
+    background-color: $headAndFootColor;
+    display: flex;
+}
