@@ -17,6 +17,7 @@ body {
 header {
   background-color: orange;
   color: white;
+  min-height: 50px;
 }
 
 .site_title, nav {
@@ -24,6 +25,11 @@ header {
   flex-direction: raw;
   justify-content: space-between;
   align-items: center;
+}
+
+nav {
+  padding: 0 8px;
+  height: 100%;
 }
 
 a {
@@ -64,4 +70,50 @@ footer {
   color: white;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 100px;
+}
+footer ul {
+  flex-grow: 3;
+  justify-content: space-around;
+}
+footer ul div {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer div {
+  flex-grow: 1;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer div p {
+  margin: 0px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer div {
+    padding-left: 0;
+    align-items: center;
+  }
+
+  footer ul {
+    width: 80%;
+  }
+
+  footer ul div {
+    padding-left: 0;
+    align-items: center;
+  }
 }
