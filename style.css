@@ -2,12 +2,12 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Uncial Antiqua", cursive;
 }
 
 body {
   height: 100%;
-  font-family: "Roboto Slab";
-  font-size: 22px;
+  font-size: 20px;
   margin: 0;
   width: auto;
   display: flex;
@@ -39,7 +39,7 @@ a {
 
 ul {
   display: flex;
-  flex-direction: raw;
+  flex-direction: row;
   margin: 0 4px;
   flex-wrap: wrap;
   padding: 0;
@@ -48,20 +48,66 @@ ul li {
   list-style-type: none;
   margin: 0 3px;
 }
-
-main {
-  flex-grow: 1;
+ul li:hover {
+  text-decoration: underline;
 }
 
-.ring {
+main {
+  font-size: 25px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main div {
+  display: flex;
+  justify-content: center;
+}
+main div:last-child {
+  flex-direction: column;
+}
+
+.ring-orange {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   border-style: solid;
-  border-color: red;
+  border-color: orange;
   border-width: 5px;
   background: transparent;
-  box-shadow: inset 3.3333333333px 3.3333333333px 3px #ff6666, 3.3333333333px 3.3333333333px 3px #ff6666;
+  box-shadow: inset 3.3333333333px 3.3333333333px 3px #ffc966, 3.3333333333px 3.3333333333px 3px #ffc966;
+}
+
+.ring-yellow {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: yellow;
+  border-width: 12.5px;
+  background: transparent;
+  box-shadow: inset 8.3333333333px 8.3333333333px 3px #ffff66, 8.3333333333px 8.3333333333px 3px #ffff66;
+}
+
+.ring-black {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  background: transparent;
+  box-shadow: inset 3.3333333333px 3.3333333333px 3px #333333, 3.3333333333px 3.3333333333px 3px #333333;
+}
+
+h3 {
+  margin: 0;
+}
+
+.h3-orange {
+  margin: 0 16px;
+  padding-top: 10px;
 }
 
 footer {
@@ -97,6 +143,20 @@ footer div p {
 }
 
 @media screen and (max-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header ul {
+    justify-content: space-around;
+  }
+
   footer {
     justify-content: center;
     flex-direction: column;
