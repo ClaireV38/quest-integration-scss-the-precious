@@ -17,7 +17,7 @@ body {
 header {
   background-color: orange;
   color: white;
-  min-height: 50px;
+  padding: 15px 0;
 }
 
 .site_title, nav {
@@ -63,6 +63,7 @@ main {
 main div {
   display: flex;
   justify-content: center;
+  margin: 10px 0;
 }
 main div:last-child {
   flex-direction: column;
@@ -90,15 +91,94 @@ main div:last-child {
   box-shadow: inset 8.3333333333px 8.3333333333px 3px #ffff66, 8.3333333333px 8.3333333333px 3px #ffff66;
 }
 
-.ring-black {
-  height: 40px;
-  width: 40px;
+.ring-row {
+  width: 350px;
+  height: 52px;
+  position: relative;
+}
+
+.ring-black:nth-child(1) {
+  height: 42px;
+  width: 42px;
   border-radius: 50%;
   border-style: solid;
   border-color: black;
-  border-width: 5px;
+  border-width: 5.25px;
   background: transparent;
-  box-shadow: inset 3.3333333333px 3.3333333333px 3px #333333, 3.3333333333px 3.3333333333px 3px #333333;
+  box-shadow: inset 3.5px 3.5px 3px #333333, 3.5px 3.5px 3px #333333;
+  position: absolute;
+  left: 55px;
+  top: 10px;
+}
+
+.ring-black:nth-child(2) {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5.5px;
+  background: transparent;
+  box-shadow: inset 3.6666666667px 3.6666666667px 3px #333333, 3.6666666667px 3.6666666667px 3px #333333;
+  position: absolute;
+  left: 90px;
+  top: 8px;
+}
+
+.ring-black:nth-child(3) {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 5.75px;
+  background: transparent;
+  box-shadow: inset 3.8333333333px 3.8333333333px 3px #333333, 3.8333333333px 3.8333333333px 3px #333333;
+  position: absolute;
+  left: 125px;
+  top: 6px;
+}
+
+.ring-black:nth-child(4) {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 6px;
+  background: transparent;
+  box-shadow: inset 4px 4px 3px #333333, 4px 4px 3px #333333;
+  position: absolute;
+  left: 160px;
+  top: 4px;
+}
+
+.ring-black:nth-child(5) {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 6.25px;
+  background: transparent;
+  box-shadow: inset 4.1666666667px 4.1666666667px 3px #333333, 4.1666666667px 4.1666666667px 3px #333333;
+  position: absolute;
+  left: 195px;
+  top: 2px;
+}
+
+.ring-black:nth-child(6) {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: black;
+  border-width: 6.5px;
+  background: transparent;
+  box-shadow: inset 4.3333333333px 4.3333333333px 3px #333333, 4.3333333333px 4.3333333333px 3px #333333;
+  position: absolute;
+  left: 230px;
+  top: 0px;
 }
 
 h3 {
@@ -108,6 +188,15 @@ h3 {
 .h3-orange {
   margin: 0 16px;
   padding-top: 10px;
+}
+
+.h3-yellow {
+  padding: 50px 0;
+}
+
+.h3-black {
+  margin-top: 30px;
+  text-align: center;
 }
 
 footer {

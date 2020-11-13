@@ -32,7 +32,7 @@ body {
 header {
   background-color: $headAndFootColor;
   color: $headAndFootTextColor;
-  min-height: 50px;
+  padding: 15px 0;
 }
 
 .site_title {
@@ -78,6 +78,7 @@ main {
   div {
     display: flex;
     justify-content: center;
+    margin: 10px 0;
   }
   div:last-child {
     flex-direction: column;
@@ -93,8 +94,19 @@ main {
   @include ring(100px, yellow);
 }
 
-.ring-black {
-  @include ring(40px, black);
+.ring-row {
+  width: 350px;
+  height: 52px;
+  position: relative;
+}
+
+@for $i from 1 through 6 {
+  .ring-black:nth-child(#{$i}) {
+    @include ring(40px + $i * 2px, black);
+    position: absolute;
+    left: 20 + $i * 35px;
+    top: 12 - $i * 2px;
+  }
 }
 
 h3 {
@@ -104,6 +116,15 @@ h3 {
 .h3-orange {
   margin: 0 16px;
   padding-top: 10px;
+}
+
+.h3-yellow {
+  padding: 50px 0;
+}
+
+.h3-black {
+  margin-top: 30px;
+  text-align: center;
 }
 
 footer {
@@ -171,3 +192,4 @@ footer {
     align-items: center;
   }
 }
+
